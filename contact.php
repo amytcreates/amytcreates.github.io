@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+	
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amy Tran | Contact</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/tsp1asc.css">
+	<link rel="icon" href="imgs/personal-brand/resized/personal-logo-icon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="contact-style.css" type="text/css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+	  
+	<!-- HEADER -->
+	  
+	<header>
+		
+		<!-- container -->
+		<div class="container justify-content-center">
+			
+			
+			<!-- branding col -->
+			
+			<div class="logo-row justify-content-center">
+				
+				<!-- hamburger button -->
+				
+  						<input type="checkbox" id="navi-toggle" class="checkbox"/>
+ 						 <label for="navi-toggle" class="button">
+    						<span class="icon"></span>
+ 						 </label>
+					
+					<div class="background"></div>
+
+ 				 <!-- nav -->
+  					<nav class="nav-menu" id="navMenu">
+   						<ul class="nav-menu-list">
+      						<li class="nav-menu-item" id="worksNav"> <a class="nav-menu-link" href="index.html"> WORKS </a> </li>
+     						<li class="nav-menu-item"> <a class="nav-menu-link" href="about.php"> ABOUT </a> </li>
+      						<li class="nav-menu-item"> <a class="nav-menu-link active" href="contact.php"> CONTACT </a> </li>
+      						<li class="nav-menu-item"> <a class="nav-menu-link" href="https://drive.google.com/file/d/1U-N33jifTcr_6NidzPE3NA-dBpyupvV1/view?usp=sharing"> RESUME </a> </li>
+    					</ul>
+					</nav>
+				<!-- /hamburger button -->
+				
+				<!-- logo -->
+				<a href="index.html">
+					<div class="logo-container justify-content-center">
+						<img src="imgs/personal-brand/resized/personal-logo.png" alt="Personal Logo" class="img-logo">
+					</div>
+				</a>
+				
+			</div>
+					<div class="name justify-content-center">
+						Amy Tran
+					</div>
+				<!-- /logo -->
+			
+			<!-- /branding col -->
+			
+			<div class="line-container">
+				<hr/>
+			</div>
+			
+			<!-- horizontal navbar -->
+			<div class="navbar justify-content-center">
+			
+				<nav class="navbar navbar-expand-md justify-content-center">
+					
+					
+					<!-- mainNavbar -->
+					
+					<div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+						
+						<ul class="navbar-nav">
+							
+							<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.php">ABOUT</a></li>
+							<li class="nav-item"><a class="nav-link active" href="contact.php">CONTACT</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1U-N33jifTcr_6NidzPE3NA-dBpyupvV1/view?usp=sharing">RESUME</a></li>
+						</ul>					
+					
+					
+					</div>
+					
+					
+					<!-- /mainNavbar -->
+					
+				</nav><!-- /navbar container-->
+			   
+			</div>
+			
+			<!-- phone -->
+			<div class="nav-item-sm">CONTACT</div>
+			
+			<!-- /navbar -->
+			
+	  	</div><!-- /container-fluid -->
+		
+		</header>
+
+		
+	  	<!-- /HEADER -->
+	  
+	  
+	  	<!-- CONTACT -->
+	  	<div class="container-xl justify-content-center">
+			
+			<section class="row">
+				
+				<div class="col-12 col-md-4 contact-bg">
+					
+					 <div class="form-container">
+						 
+       			 		<div class="contact-me">Contact Me!</div>
+						 
+        				<form id="contactForm" action="send-email.php" method="post">
+							
+            			<div class="form-row">
+							<div class="form-group">
+                				<label for="name">FIRST NAME</label>
+                				<input type="name-text" id="firstname" name="firstname" required>
+							</div>
+							<div class="form-group">
+                				<label for="name">LAST NAME</label>
+                				<input type="name-text" id="lastname" name="lastname" required>
+							</div>
+            			</div>
+							
+            			<div class="form-row">
+							<div class="form-group">
+                				<label for="email">EMAIL</label>
+                				<input type="email" id="email" name="email" required>
+							</div>
+            			</div>
+							
+            			<div class="form-row">
+							<div class="form-group">
+                				<label for="message">COMMENTS OR QUESTIONS?</label>
+               					<textarea id="message" name="message" rows="7" required></textarea>
+							</div>
+            			</div>
+							
+            			<input type="submit" value="SUBMIT">
+							
+        				</form>
+        				
+						<div id="formMessage" class="hidden"></div>
+						 
+    					</div>
+						
+				</div>
+					
+			</section>
+			
+		
+		<!-- /CONTACT -->	
+			
+	 	<footer class="row">
+			
+			
+			<!-- social links and email -->
+			<div class="col-12 col-md-8 footer-container">
+				
+				<div class="back-to-top">
+					<a href="#">BACK TO TOP<i class="bi bi-arrow-up-short"></i></a>
+				</div>
+				
+				<div class="footer-name">
+					AMY TRAN
+				</div>
+				
+				<ul class="social-icons-row text-center">
+					<div class="social-icons-bg">
+						<li class="social-icons"><a href="https://instagram.com/amytcreations"><i class="bi bi-instagram"></i></a></li>
+					</div>
+					<div class="social-icons-bg">
+						<li class="social-icons"><a href="https://linkedin.com/in/amytcreates"><i class="bi bi-linkedin"></i></a></li>
+					</div>
+				</ul>
+				
+				<div class="email">
+					<a href="mailto:its@amy-t-creates.com">its@amy-t-creates.com</a>
+				</div>
+				
+				<!-- copyright -->
+				<div class="copyright">
+					Copyright © 2025
+				</div>
+				<!-- /copyright -->
+
+			</div>
+			<!-- /social links and email -->
+			
+		
+		</footer> 
+	  
+	</div> <!-- container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="contact-script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+
+</html>

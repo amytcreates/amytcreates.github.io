@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+	
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amy Tran | Radience</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/tsp1asc.css">
+	<link rel="icon" href="imgs/personal-brand/resized/personal-logo-icon/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="radience-style.css" type="text/css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+	  
+	  <header>
+		  
+	  	<!-- CLOSE BUTTON -->
+			
+			<a href="index.html">
+				<div class="button">
+					<i class="bi bi-x-lg"></i>
+				</div>
+			</a>
+			
+			<div class="background"></div>
+		  
+	  </header>
+	  
+		<!-- CONTAINER -->
+	  
+	  
+		<div class="container-xl justify-content-center">
+			
+
+		
+	  
+	  		<!-- PROJECT SECTION -->
+			
+			
+			<section class="row">
+				
+				
+				<!-- PROJECT HEADER -->
+					
+				<div class="col-12 col-md-4 project-header-bg">
+					
+					 <div class="info-container">
+
+						<div class="header-text-row">
+							<div class="header-group-1">
+       			 				<div class="project-name">Radience</div>
+							</div>
+							<div class="header-group-2">
+								<a href="resplendent.html" class="nav-label"><div class="nav-label">PREVIOUS</div></a>
+								<a href="#" class="nav-label"><div class="nav-label">NEXT</div></a>
+							</div>
+						</div>
+							
+            			<div class="header-text-column">
+							
+							<div class="label-row">
+                				<div class="info-label">DATE</div>
+								<div class="info-label">SOFTWARE</div>
+							</div>
+							
+							<div class="desc-row">
+                				<div class="project-desc">Fall 2023</div>
+								<div class="project-desc-row">Photoshop, InDesign</div>
+								<div class="project-desc-column">Photoshop<br>InDesign</div>
+							</div>
+							
+            			</div>
+						 
+    				</div>
+						
+				</div>
+				
+				<!-- /PROJECT HEADER -->
+				
+				<!-- BANNER -->
+					
+				<div class="col-12 col-md-4 banner-bg">
+						
+					<img src="imgs/calendar-project/resized/project-page/january-candle-full-mockup.jpg" alt="Candle Full Mockup" class="banner-img">
+						 
+    			</div>
+						
+				<!-- /BANNER -->
+				
+				<!-- PROJECT INFO -->
+				
+				<div class="col-12 col-md-4 info-row-bg">
+					
+					<div class="text-group">
+						
+						<div class="text-heading">Goal &amp; Purpose</div>
+						
+						<div class="body-text">The goal of this project was to create any kind of design that utilizes a calendar system based on a high-quality detailing of the twelve months of the year. My system is based on daily self-reflection and journaling through an app called <b>Radience</b> partnered with a 12-set of candles. The purpose of the candles and the app is to relieve stress, encourage people to stay faithful, and to help bring peace of mind. Stress is a widely shared and normal emotional response that every person is capable of having, so people of all ages are encouraged to use the candles and app to help cope with it. Candles are shown to be stress-relievers and they are perfect for prayer and meditation.
+
+						</div>
+							 
+					</div>
+					
+				</div>
+				
+				
+				<div class="col-12 col-md-4 info-row-bg">
+					
+						<div class="text-group">
+						
+							<div class="text-heading">Candles</div>
+						
+							<div class="body-text">The candles can be purchased for stand-alone use, or they can be used in conjunction with the app. They come in a 12-set, one candle for each month of the year. Each candle is labeled with a month and year and has its own distinct scent.</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/january-february-march-candle-mockup.png" alt="January, February, and March Candle Mockup" class="row-img">
+							
+							<img src="imgs/calendar-project/resized/project-page/april-may-june-candle-mockup.png" alt="April, May, and June Candle Mockup" class="row-img">
+							
+							<img src="imgs/calendar-project/resized/project-page/july-august-september-candle-mockup.png" alt="July, August, and September Candle Mockup" class="row-img">
+							
+							<img src="imgs/calendar-project/resized/project-page/october-november-december-candle-mockup.png" alt="October, November, and December Candle Mockup" class="row-img">
+							 
+						</div>
+						
+				</div>
+	
+				
+				<div class="col-12 col-md-4 info-row-bg-2">
+					
+					<div class="info-column-bg">
+					
+						<img src="imgs/calendar-project/resized/project-page/radience-app-logo.png" alt="Radience App Logo" class="column-img">
+						
+					</div>
+						
+					<div class="info-column-bg">
+				
+						
+						<div class="text-group">
+						
+							<div class="text-heading">App Logo</div>
+						
+							<div class="body-text">The app logo features a calming blue gradient with the 'Radience' wordmark centered. It has a reflective quality which symbolizes the desire to 'shine' and be the best version of ourselves.</div>
+							 
+					
+						</div>
+					
+					</div>
+					
+				</div>
+				
+				
+				<div class="col-12 col-md-4 info-row-bg">
+				
+						
+						<div class="text-group">
+						
+							<div class="text-heading">Welcome/Opening</div>
+						
+							<div class="body-text">Upon opening the app, the '<b>Radience</b>' wordmark is displayed, which will then proceed to a loading screen containing a small uplifting quote.</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/radience-welcome.png" alt="Welcome/Opening" class="row-img">
+					
+						</div>
+	
+					
+				</div>
+				
+				
+				<div class="col-12 col-md-4 info-row-bg">
+						
+						<div class="text-group">
+						
+							<div class="text-heading">Home/Calendar</div>
+						
+							<div class="body-text">On the home screen, the current date and time is displayed, as well as a quote of the day. There are also meditation courses available to watch. Users can scroll through the calendar and see which days they have completed a meditation course and also how their self-reflection inputs progressed throughout the course of the year. Another thing to note is that the app's background color changes in correspondence to the month.</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/radience-home-calendar.png" alt="Home and Calendar" class="row-img">
+							 
+					
+						</div>
+					
+				</div>
+				
+				
+				<div class="col-12 col-md-4 info-row-bg">
+				
+						
+						<div class="text-group">
+						
+							<div class="text-heading">Self-Reflection/Scent Fact</div>
+						
+							<div class="body-text">In the 'Self-Reflection' section, the user can answer daily questions and write down things that stress them, things they are grateful for, or anything else they have in mind. It is encouraged to be open and honest. The 'Scent Fact' section contains a fun fact about the current month's candle scent.</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/radience-self-reflection-scent-fact.png" alt="Self-Reflection and Scent Fact" class="row-img">
+							 
+						</div>
+
+					
+				</div>
+				
+				
+				<div class="col-12 col-md-4 info-row-bg">
+
+						
+						<div class="text-group">
+						
+							<div class="text-heading">Order</div>
+						
+							<div class="body-text">If the user completes a meditation course at least once a month from January to November, they are eligible to receive a free Christmas-themed gift box containing a sweatshirt and mug in December. A congratulations message will pop-up containing a code, in which the user can enter on the order screen to have their package delivered.</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/radience-order.png" alt="Order Menu" class="row-img">
+							 
+						</div>
+					
+					
+				</div>
+			
+
+				<div class="col-12 col-md-4 info-row-bg">
+					
+					
+						<div class="text-group">
+						
+							<div class="text-heading">Gift Items</div>
+						
+							<div class="body-text">An example gift box that will contain a Christmas-themed sweatshirt and mug to enjoy for the holidays!</div>
+							
+							<img src="imgs/calendar-project/resized/project-page/sweatshirt-mug-mockup.png" alt="Sweatshirt and Mug Mockups" class="row-img">
+							
+							<img src="imgs/calendar-project/resized/project-page/gift-box-mockup.png" alt="Gift Box Mockup" class="row-img">
+					
+						</div>
+						
+					
+				</div>
+
+				
+				
+				<!-- /PROJECT INFO -->
+				
+			</section>
+			
+			<!-- /PROJECT SECTION -->	
+			
+			
+			<!--FOOTER-->
+			
+	 		<footer class="row">
+			
+			
+			<!-- social links and email -->
+			<div class="col-12 col-md-8 footer-container">
+				
+				<div class="back-to-top">
+					<a href="#">BACK TO TOP<i class="bi bi-arrow-up-short"></i></a>
+				</div>
+				
+				<div class="footer-name">
+					AMY TRAN
+				</div>
+				
+				<ul class="social-icons-row text-center">
+					<div class="social-icons-bg">
+						<li class="social-icons"><a href="https://instagram.com/amytcreations"><i class="bi bi-instagram"></i></a></li>
+					</div>
+					<div class="social-icons-bg">
+						<li class="social-icons"><a href="https://linkedin.com/in/amytcreates"><i class="bi bi-linkedin"></i></a></li>
+					</div>
+				</ul>
+				
+				<div class="email">
+					<a href="mailto:its@amy-t-creates.com">its@amy-t-creates.com</a>
+				</div>
+				
+				<!-- copyright -->
+				<div class="copyright">
+					Copyright © 2025
+				</div>
+				<!-- /copyright -->
+
+			</div>
+			<!-- /social links and email -->
+			
+		
+		</footer>
+			
+		<!--/FOOTER-->
+			
+			
+	  	</div> <!--/CONTAINER XL --> 
+	  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+
+</html>
