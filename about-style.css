@@ -7,39 +7,44 @@
 /* --------------------------------- */
 
 
-.bryant-light {
-  font-family: "Bryant", sans-serif;
+@font-face {
+  font-family: "Bryant";
+  src: url("fonts/BryantPro-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
-.bryant-regular {
-	font-family: "Bryant", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.bryant-regular-italic {
-	font-family: "Bryant", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-
-.bryant-medium {
-	font-family: "Bryant", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
-
-
-.proza-libre-regular {
-  font-family: "Proza Libre", sans-serif;
+@font-face {
+  font-family: "Bryant";
+  src: url("fonts/BryantPro-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
-.proza-libre-semibold {
-  font-family: "Proza Libre", sans-serif;
+@font-face {
+  font-family: "Bryant";
+  src: url("fonts/BryantPro-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bryant";
+  src: url("fonts/BryantPro-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proza Libre";
+  src: url("fonts/ProzaLibre-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proza Libre";
+  src: url("fonts/ProzaLibre-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
