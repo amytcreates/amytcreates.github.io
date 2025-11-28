@@ -18,46 +18,16 @@ Tags: custom-background
 /* FONTS ------------------ */
 /* --------------------------------- */
 
-
-<<<<<<< HEAD
-.bryant-light {
-  font-family: "bryant-web", sans-serif;
-=======
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-Light.otf") format("opentype");
->>>>>>> fe470073d2b9f77c2126e675b10605cf940dc920
   font-weight: 300;
   font-style: normal;
 }
 
-<<<<<<< HEAD
-.bryant-regular {
-	font-family: "bryant-web", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.bryant-regular-italic {
-	font-family: "bryant-web", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-
-.bryant-medium {
-	font-family: "bryant-web", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
-
-
-.proza-libre-regular {
-  font-family: "Proza Libre", sans-serif;
-=======
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-Regular.otf") format("opentype");
->>>>>>> fe470073d2b9f77c2126e675b10605cf940dc920
   font-weight: 400;
   font-style: normal;
 }
