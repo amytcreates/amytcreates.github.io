@@ -116,7 +116,7 @@ header {
 
 .name {
 	display: flex;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	font-style: normal;
@@ -221,7 +221,7 @@ p {
 
 .port-hover {
 	font-size: 30px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	white-space: nowrap;
@@ -311,7 +311,7 @@ p {
 	display: flex;
     text-align: center;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 40px;
 	line-height: 40px;
 }
@@ -332,7 +332,7 @@ p {
 
 .first-name {
 	display: flex;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	font-style: normal;
@@ -343,7 +343,7 @@ p {
 
 .last-name {
 	display: flex;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	font-style: normal;
@@ -355,7 +355,7 @@ p {
 
 label {
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 }
@@ -370,7 +370,7 @@ input[type="name-text"] {
 	background-color: transparent;
 	color: #fff;
 	height: 40px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 }
 
@@ -383,7 +383,7 @@ input[type="text"], input[type="email"] {
 	background-color: transparent;
 	color: #fff;
 	height: 40px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 }
 
@@ -395,7 +395,7 @@ textarea {
     box-sizing: border-box;
 	background-color: transparent;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 }
 
@@ -421,7 +421,7 @@ input[type="submit"] {
     border-radius: 15px;
     cursor: pointer;
     font-size: 22px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 400;
 	text-align: center;
 }
@@ -542,7 +542,7 @@ input[type="submit"]:hover {
 	display: flex;
     text-align: center;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 40px;
 	font-weight: 500;
 	line-height: 40px;
@@ -583,7 +583,7 @@ input[type="submit"]:hover {
 	display: flex;
 	flex-direction: row;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
@@ -592,14 +592,14 @@ input[type="submit"]:hover {
 
 .info-label {
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
 }
 
 .nav-label {
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
@@ -669,7 +669,7 @@ input[type="submit"]:hover {
 }
 
 .text-heading {
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 40px;
@@ -709,7 +709,7 @@ input[type="submit"]:hover {
 
 .back-to-top {
 	width: 100%;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 22px;
 	font-weight: 300;
 	color: #999999;
@@ -729,7 +729,7 @@ input[type="submit"]:hover {
 .footer-name {
 	width: 100%;
 	height: auto;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 150px;
 	font-weight: 400;
 	color: #778cca;
@@ -788,7 +788,7 @@ input[type="submit"]:hover {
 	display: flex;
 	width: 100%;
 	margin-top: 30px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	color: #999999;
@@ -804,7 +804,7 @@ input[type="submit"]:hover {
 	display: flex;
 	width: 100%;
 	margin-top: 85px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	color: #999999;
@@ -835,12 +835,6 @@ input[type="submit"]:hover {
 	height: 35px;
 }
 
-
-.navbar-toggler {
-
-	
-}
-
 .navbar-toggler-icon {
 	color: #fff;
 	width: 40px;
@@ -852,7 +846,7 @@ input[type="submit"]:hover {
 
 ul.navbar-nav {
 	display: flex;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 25px;
@@ -897,7 +891,7 @@ a.nav-link:hover {
 .nav-item-sm {
 	display: flex;
 	height: 25px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: #ffffff;
@@ -964,7 +958,7 @@ a.nav-link:hover {
 }
 
 .nav-menu-item {
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
   	font-size: 32px;
 	font-weight: 400;
 	color: #fff;
@@ -1306,7 +1300,7 @@ a.nav-link:hover {
 	display: flex;
     text-align: center;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	}
@@ -1328,7 +1322,7 @@ a.nav-link:hover {
 
 	label {
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 13px;
 	line-height: 13px;
 	}
@@ -1343,7 +1337,7 @@ a.nav-link:hover {
 	background-color: transparent;
 	color: #fff;
 	height: 35px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 	}
 
@@ -1356,7 +1350,7 @@ a.nav-link:hover {
 	background-color: transparent;
 	color: #fff;
 	height: 35px;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 	}
 
@@ -1368,7 +1362,7 @@ a.nav-link:hover {
     box-sizing: border-box;
 	background-color: transparent;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-weight: 300;
 	}
 
@@ -1505,7 +1499,7 @@ a.nav-link:hover {
 	display: flex;
     text-align: left;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 32px;
 	font-weight: 500;
 	width: 200px;
@@ -1521,7 +1515,7 @@ a.nav-link:hover {
 
 	.info-label {
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 15px;
@@ -1529,7 +1523,7 @@ a.nav-link:hover {
 
 	.nav-label {
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 15px;
@@ -1574,7 +1568,7 @@ a.nav-link:hover {
 	display: flex;
 	flex-direction: row;
 	color: #fff;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
@@ -1623,7 +1617,7 @@ a.nav-link:hover {
 	}
 
 	.text-heading {
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 24px;
@@ -1667,7 +1661,7 @@ a.nav-link:hover {
 	.footer-name {
 	width: 100%;
 	height: auto;
-	font-family: "bryant-web", sans-serif;
+	font-family: "Bryant", sans-serif;
 	font-size: 64px;
 	font-weight: 400;
 	color: #778cca;
