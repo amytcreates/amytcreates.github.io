@@ -1,130 +1,130 @@
-/* ===========================
-   FONT FACE
-=========================== */
+/* ================================
+   GitHub Pages CSS — matched to live domain
+   Differences:
+   - Hamburger menu: FADE ONLY (no slide, no expanding circle)
+   - WORKS visible ONLY on phones when menu is CLOSED
+   ================================ */
+
+@charset "UTF-8";
+
+/* --------------------------------- */
+/* FONTS */
+/* --------------------------------- */
 
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
+
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
+
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-RegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
 }
+
 @font-face {
   font-family: "Bryant";
   src: url("fonts/BryantPro-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
-/* Vars */
-:root {
-  --brand-font: "Bryant", sans-serif;
-  --body-font: "Proza Libre", sans-serif;
-  --brand-color: #778cca;
-  --white: #fff;
-  --black: #000;
-}
+body { background:#000; }
 
-/* ===========================
-   BODY
-=========================== */
-body {
-  font-family: var(--body-font);
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+/* --------------------------------- */
+/* WORKS (mobile only, closed menu) */
+/* --------------------------------- */
 
-/* ===========================
-   MAIN NAVBAR (DESKTOP)
-=========================== */
-
-.navbar-nav .nav-link {
-  text-decoration: none;
-  font-family: var(--brand-font);
-  color: var(--black);
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  color: var(--brand-color);
-}
-
-/* ===========================
-   MOBILE — "WORKS" TITLE
-=========================== */
 .nav-item-sm {
-  font-family: var(--brand-font);
-  font-size: 32px;
-  font-weight: 400;
-  color: var(--brand-color);
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* ===========================
-   HAMBURGER MENU
-=========================== */
-
-.checkbox {
   display: none;
+  font-family: "Bryant", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
 }
+
+/* --------------------------------- */
+/* HAMBURGER MENU (FADE ONLY) */
+/* --------------------------------- */
+
+.checkbox { display:none; }
 
 .button {
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0,0.5);
   height: 50px;
   width: 50px;
   border-radius: 10px;
   top: 10vw;
   left: 5vw;
   z-index: 2000;
-  text-align: center;
   cursor: pointer;
 }
 
-.background {
-  height: 50px;
-  width: 50px;
+.icon,
+.icon::before,
+.icon::after {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
   border-radius: 10px;
-  position: fixed;
-  top: 10vw;
-  left: 5vw;
-  border: .2px solid #999;
-  z-index: 1000;
 }
 
-/* Overlay panel */
-.nav-menu {
-  height: 100vh;
-  position: fixed;
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.icon::before { top: -0.6rem; }
+.icon::after  { top:  0.6rem; }
+
+.checkbox:checked + .button .icon { background: transparent; }
+.checkbox:checked + .button .icon::before {
   top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1500;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.nav-menu {
+  position: fixed;
+  inset: 0;
+  background: #000;
   opacity: 0;
   pointer-events: none;
-  background-color: var(--black);
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
+  z-index: 1500;
 }
 
-/* Center list */
+.checkbox:checked ~ .nav-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .nav-menu-list {
   display: flex;
   flex-direction: column;
@@ -134,117 +134,45 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center;
-  width: 100%;
+  padding: 0;
   margin: 0;
-  padding: 0;
+  text-align: center;
 }
 
-/* Link styles */
-.nav-menu-item {
-  font-family: var(--brand-font);
-  font-size: 32px;
-  font-weight: 400;
-}
+.nav-menu-item,
 .nav-menu-item a {
-  color: var(--white);
+  font-family: "Bryant", sans-serif;
+  font-size: 32px;
+  color: #fff;
   text-decoration: none;
-  transition: color .3s ease;
+  transition: color 0.5s;
 }
+
 .nav-menu-item a:hover,
-.nav-menu-item a.active {
-  color: var(--brand-color);
+.nav-link.active {
+  color: #778cca;
 }
 
-/* Reveal overlays */
-.checkbox:checked ~ .nav-menu {
-  opacity: 1;
-  pointer-events: auto;
+/* --------------------------------- */
+/* MEDIA QUERIES */
+/* --------------------------------- */
+
+@media (max-width: 430px) {
+  .nav-item-sm { display: flex; justify-content: center; }
+
+  .checkbox:checked ~ .nav-item-sm { display:none; }
+
+  .navbar { display:none; }
 }
 
-.checkbox:checked ~ .background {
-  transform: scale(80);
-  background-color: var(--black);
+@media (min-width: 768px) {
+  .button,
+  .nav-menu,
+  .nav-item-sm { display:none; }
 }
 
-/* Icon styling */
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media (min-width: 960px) {
+  .button,
+  .nav-menu,
+  .nav-item-sm { display:none; }
 }
-.icon,
-.icon::before,
-.icon::after {
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.icon::before,
-.icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all .3s;
-}
-.icon::before { top: -0.6rem; }
-.icon::after { top: 0.6rem; }
-
-.checkbox:checked + .button .icon {
-  background-color: transparent;
-}
-.checkbox:checked + .button .icon::before {
-  top: 0; transform: rotate(135deg);
-}
-.checkbox:checked + .button .icon::after {
-  top: 0; transform: rotate(-135deg);
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-
-footer {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.footer-name {
-  font-family: var(--brand-font);
-  font-size: 150px;
-  font-weight: 400;
-  color: var(--brand-color);
-  opacity: .2;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.social-icons-row {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 0;
-}
-
-.social-icons-bg {
-  border: 1px solid #000;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.email a,
-.copyright {
-  font-family: var(--brand-font);
-  font-size: 16px;
-  color: var(--black);
-  text-decoration: none;
-}
-
-/* ===========================
-   END
-=========================== */
