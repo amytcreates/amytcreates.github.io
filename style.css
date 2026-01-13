@@ -280,9 +280,107 @@ p {
 /* CONTACT FORM ------------------ */
 /* --------------------------------- */
 
+/* Updated form message styles */
+.form-message {
+	display: flex;
+	align-items: center;
+	padding: 12px 20px;
+	border-radius: 10px;
+	font-family: "bryant-web", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	animation: slideIn 0.3s ease-in-out;
+}
+
+.form-message.success {
+	background-color: rgba(119, 140, 202, 0.2);
+	color: #b5aaed;
+	border: 1px solid #778cca;
+}
+
+.form-message.error {
+	background-color: rgba(255, 107, 107, 0.2);
+	color: #ff6b6b;
+	border: 1px solid #ff6b6b;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.form-message-wrapper {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in-out, margin-bottom 0.4s ease-in-out, opacity 0.3s ease-in-out;
+	opacity: 0;
+	margin-bottom: 0;
+}
+
+.form-message-wrapper.show {
+	max-height: 100px;
+	opacity: 1;
+	margin-bottom: 20px;
+}
+
+.form-message-wrapper.success {
+	padding: 12px 20px;
+	border-radius: 10px;
+	font-family: "bryant-web", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: rgba(119, 140, 202, 0.2);
+	color: #b5aaed;
+	border: 1px solid #778cca;
+	display: flex;
+	align-items: center;
+}
+
+.form-message-wrapper.error {
+	padding: 12px 20px;
+	border-radius: 10px;
+	font-family: "bryant-web", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: rgba(255, 107, 107, 0.2);
+	color: #ff6b6b;
+	border: 1px solid #ff6b6b;
+	display: flex;
+	align-items: center;
+}
+
+/* Submit button disabled state */
+input[type="submit"]:disabled {
+	background-color: #555;
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+
+/* Animation for message appearance */
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Mobile responsive styles for form message */
+@media (max-width: 430px) {
+	.form-message {
+		font-size: 13px;
+		padding: 10px 15px;
+	}
+}
+
+
 .contact-bg {
 	width: 1140px;
-	height: 674px;
+	min-height: 674px;
 	border: .2px solid #999999;
 	border-radius: 50px;
     color: #000000;
@@ -292,6 +390,7 @@ p {
 	padding-left: 73px;
 	padding-right: 73px;
 	align-content: flex-start;
+	transition: min-height 0.4s ease-in-out;
 }
 
 .form-container {
@@ -301,7 +400,7 @@ p {
 	width: 994px;
 	height: auto;
     background-color: transparent;
-	gap: 40px;
+	gap: 20px;
 }
 
 .contact-me {
@@ -317,6 +416,7 @@ p {
 	display: flex;
 	flex-direction: row;
     margin-bottom: 35px;
+	margin-top: 30px;
 	gap: 24px;
 }
 
@@ -1269,6 +1369,17 @@ a.nav-link:hover {
 	
 	
 	/* contact */
+
+	.form-message-wrapper.success,
+	.form-message-wrapper.error {
+		font-size: 13px;
+		padding: 10px 15px;
+	}
+	
+	.form-message-wrapper.show {
+		max-height: 80px;
+		margin-bottom: 15px;
+	}
 	
 	.first-name {
 	font-size: 25px;
@@ -1280,13 +1391,14 @@ a.nav-link:hover {
 	
 	.contact-bg {
 		max-width: 335px;
-		max-height: 700px;
+		min-height: 700px;
 		height: auto;
 		border-radius: 30px;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		padding-left: 25px;
 		padding-right: 25px;
+		transition: min-height 0.4s ease-in-out;
 	}
 	
 	.form-container {
@@ -1296,7 +1408,7 @@ a.nav-link:hover {
 	width: 284px;
 	height: auto;
     background-color: transparent;
-	gap: 40px;
+	gap: 20px;
 	}
 
 	.contact-me {

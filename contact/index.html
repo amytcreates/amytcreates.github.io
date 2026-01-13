@@ -118,56 +118,104 @@
 	  	<!-- /HEADER -->
 	  
 	  
-	  	<!-- CONTACT -->
-	  	<div class="container-xl justify-content-center">
-			
-			<section class="row">
+	  	<!-- CONTACT FORM  -->
+<div class="container-xl justify-content-center">
+	<section class="row">
+		<div class="col-12 col-md-4 contact-bg">
+			<div class="form-container">
+				<div class="contact-me">Contact Me!</div>
 				
-				<div class="col-12 col-md-4 contact-bg">
+				<!-- Success/Error Messages -->
+				<div id="formMessage" class="hidden"></div>
+				
+				<form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="8cb1a5e5-9361-42a1-9c3a-e34cb4016829">
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="firstname">FIRST NAME</label>
+							<input type="text" id="firstname" name="firstname" required>
+						</div>
+						<div class="form-group">
+							<label for="lastname">LAST NAME</label>
+							<input type="text" id="lastname" name="lastname" required>
+						</div>
+					</div>
 					
-					 <div class="form-container">
-						 
-       			 		<div class="contact-me">Contact Me!</div>
-						 
-        				<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
-							
-            			<div class="form-row">
-							<div class="form-group">
-                				<label for="firstname">FIRST NAME</label>
-                				<input type="text" id="firstname" name="firstname" required>
-							</div>
-							<div class="form-group">
-                				<label for="lastname">LAST NAME</label>
-                				<input type="text" id="lastname" name="lastname" required>
-							</div>
-            			</div>
-							
-            			<div class="form-row">
-							<div class="form-group">
-                				<label for="email">EMAIL</label>
-                				<input type="email" id="email" name="email" required>
-							</div>
-            			</div>
-							
-            			<div class="form-row">
-							<div class="form-group">
-                				<label for="message">COMMENTS OR QUESTIONS?</label>
-               					<textarea id="message" name="message" rows="7" required></textarea>
-							</div>
-            			</div>
-							
-            			<input type="submit" value="SUBMIT">
-							
-        				</form>
-        				
-						<div id="formMessage" class="hidden"></div>
-						 
-    					</div>
-						
-				</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="email">EMAIL</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+					</div>
 					
-			</section>
-			
+					<div class="form-row">
+						<div class="form-group">
+							<label for="message">COMMENTS OR QUESTIONS?</label>
+							<textarea id="message" name="message" rows="7" required></textarea>
+						</div>
+					</div>
+					
+					<div class="form-row" style="display:flex; flex-direction: row; gap: 18px; align-items: center;">
+						<div style="display: flex; width: fit-content;">
+							<input type="submit" value="SUBMIT" id="submitBtn">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script>
+// Contact Form Handling
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+	e.preventDefault();
+	
+	const form = e.target;
+	const submitBtn = document.getElementById('submitBtn');
+	const formMessage = document.getElementById('formMessage');
+	const formData = new FormData(form);
+	
+	// Disable submit button
+	submitBtn.disabled = true;
+	submitBtn.value = 'SENDING...';
+	
+	try {
+		const response = await fetch(form.action, {
+			method: 'POST',
+			body: formData,
+			headers: {
+				'Accept': 'application/json'
+			}
+		});
+		
+		if (response.ok) {
+			// Success
+			formMessage.textContent = 'Thank you! Your message has been sent.';
+			formMessage.className = 'form-message success';
+			form.reset();
+		} else {
+			// Error
+			formMessage.textContent = 'Oops! There was a problem. Please try again.';
+			formMessage.className = 'form-message error';
+		}
+	} catch (error) {
+		formMessage.textContent = 'Oops! There was a problem. Please try again.';
+		formMessage.className = 'form-message error';
+	}
+	
+	// Re-enable submit button
+	submitBtn.disabled = false;
+	submitBtn.value = 'SUBMIT';
+	
+	// Hide message after 5 seconds
+	setTimeout(() => {
+		formMessage.className = 'hidden';
+	}, 5000);
+});
+</script>
 		
 		<!-- /CONTACT -->	
 			
@@ -203,7 +251,7 @@
 				
 				<!-- copyright -->
 				<div class="copyright">
-					Copyright © 2025
+					Copyright © 2026
 				</div>
 				<!-- /copyright -->
 
