@@ -1500,39 +1500,39 @@ a.nav-link:hover {
     border-radius: 4px;
     text-align: center;
 	}
-	
-	.close-background {
- 	height: 50px;
- 	width: 50px;
-  	border-radius: 10px;
-  	position: fixed;
-	top: 10vw;
-  	left: 5vw;
-	border: .2px solid #999999;
-  	z-index: 1000;
-	}
-	
-	.close-button {
-	position: fixed;
-	background: rgba(0,0,0,0.5);
-  	height: 30px;
-  	width: 30px;
-  	border-radius: 10px;
-  	top: 10vw;
-  	left: 7.5vw; 
-  	z-index: 1;
-  	text-align: center; 
-  	cursor: pointer;
-	}
 
-	.bi-x-lg::before {
-    content: "\f659";
+
+.close-background {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    position: fixed;
+    top: 10vw;
+    left: 5vw;
+    border: .2px solid #999999;
+    z-index: 1000;
+}
+
+.close-button {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    top: 10vw;
+    left: 5vw;
+    z-index: 2000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button .bi-x-lg {
+    font-size: 30px;
     color: #fff;
-	width: 30px;
-	height: auto;
-	font-size: 30px;
-	margin-top: 10px;
-	}
+    display: block;
+}
 	
 	
 	/* PROJECT INFO */
